@@ -1,0 +1,29 @@
+@import "../../common/css/layout";
+
+
+section {
+	font-size: 20px;
+	&.held {
+		position: relative;
+		.visual {
+			position: absolute;
+			z-index: -1;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			width: 100vw;
+			height: 100%;
+			background: center / cover no-repeat;
+		}
+	}
+}
+
+section.kv {
+	.proportional(@max-content-width/500);
+	.visual {
+		background-image: url(/site/sunmar.ru/assets/kv-desktop.jpg);
+		@media screen and (max-width: @mobile-breakpoint) {
+			background-image: url(/site/sunmar.ru/assets/kv-mobile.jpg);
+		}
+	}
+}

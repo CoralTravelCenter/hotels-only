@@ -1,0 +1,8 @@
+{
+    env: {
+        brand: 'sunmar-next',
+    },
+    contents: [
+        '/site/sunmar.ru/markup/main.html',
+    ]
+}
