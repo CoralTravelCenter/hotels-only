@@ -3,6 +3,7 @@
         brand: 'sunmar-next',
     },
     contents: [
-        '/site/sunmar.ru/markup/main.html',
+        '/site/sunmar.ru/markup/styles.html',
+        '/site/sunmar.ru/markup/kv.html',
     ]
 }
