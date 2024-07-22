@@ -6,6 +6,16 @@ section {
 	@media screen and (max-width: @mobile-breakpoint) {
 		font-size: 16px;
 	}
+
+	h2 {
+		font-size: 2em;
+		margin: 0;
+	}
+	p {
+		font-weight: 300;
+		margin: 0;
+	}
+
 	&.held {
 		position: relative;
 		z-index: 0;
@@ -20,6 +30,17 @@ section {
 			background: center / cover no-repeat;
 		}
 	}
+
+	.common-grid {
+		display: grid;
+		gap: (32/20em);
+		padding: 4em 0;
+		h2 {
+			line-height: 1;
+			text-align: center;
+		}
+	}
+
 }
 
 section.kv {
@@ -52,6 +73,25 @@ section.kv {
 			@media screen and (max-width: @mobile-breakpoint) {
 				font-size: (30/16em);
 				margin: 1em 0 0;
+			}
+		}
+	}
+}
+
+section.why-only-hotel {
+	ul {
+		list-style: none;
+		display: flex;
+		font-size: (14/20em);
+		>li {
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+			align-items: center;
+			text-align: center;
+			h4 {
+				font-size: (16/14em);
+				margin: 0;
 			}
 		}
 	}
