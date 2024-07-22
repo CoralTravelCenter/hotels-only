@@ -6,6 +6,9 @@
         '/site/sunmar.ru/markup/styles.html',
         '/site/sunmar.ru/markup/kv.html',
         '/site/sunmar.ru/markup/convenient-solution.html',
-        '/site/sunmar.ru/markup/why-only-hotel.html'
+        '/site/sunmar.ru/markup/why-only-hotel.html',
+        '/site/sunmar.ru/markup/hotels-of-the-week-support.html',
+        '/site/sunmar.ru/markup/hotels-of-the-week-setup.html',
+        '/site/sunmar.ru/markup/hotels-of-the-week-runtime.html'
     ]
 }
