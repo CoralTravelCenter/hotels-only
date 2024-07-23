@@ -92,8 +92,7 @@ export function arrayOfNodesWith(what) {
     return nodes;
 }
 export function watchIntersection(targets, options, yes_handler, no_handler) {
-    var i, io, len, ref, target;
-    io = new IntersectionObserver(function(entries, observer) {
+    const io = new IntersectionObserver(function(entries, observer) {
         for (const entry of entries) {
             entry.isIntersecting ? yes_handler?.call(this, entry.target, observer) : no_handler?.call(this, entry.target, observer);
         }
@@ -101,10 +100,8 @@ export function watchIntersection(targets, options, yes_handler, no_handler) {
         threshold: 1,
         ...options
     });
-    ref = arrayOfNodesWith(targets);
-    for (i = 0, len = ref.length; i < len; i++) {
-        target = ref[i];
-        io.observe(target);
+    for (const node of arrayOfNodesWith(targets)) {
+        io.observe(node);
     }
     return io;
 }
