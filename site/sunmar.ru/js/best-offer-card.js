@@ -48,13 +48,17 @@ export class BestOfferCard {
         const arrival_location = await fetchArrivalLocation(this.destination, this.destinationType);
         console.log('=== arrival_location: %o', arrival_location);
 
+        const nights = Array.isArray(this.lookupNights)
+            ? this.lookupNights.sort((a, b) => a - b).map(n => ({ value: Number(n) }))
+            : this.lookupNights.split(/\s*,\s*/).map(n => ({ value: Number(n) })).sort((a, b) => a - b);
+
         var query = {
             arrivalLocations: [arrival_location],
             beginDates: [
                 dayjs().add(Number(this.lookupShiftDays), 'days').format('YYYY-MM-DD'),
                 dayjs().add(Number(this.lookupShiftDays) + Number(this.lookupDepthDays), 'days').format('YYYY-MM-DD'),
             ],
-            nights: this.lookupNights.split(/\s*,\s*/).map(n => ({ value: Number(n) })).sort((a, b) => a - b),
+            nights,
             reservationType: 2,
             additionalFilters: [],
             roomCriterias: [{ passengers: [{ age: 20, passengerType: 0 }, { age: 20, passengerType: 0 }] }],
