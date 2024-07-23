@@ -73,3 +73,38 @@ export function getNextData() {
     const config_el = document.getElementById('__NEXT_DATA__');
     return config_el ? JSON.parse(config_el.textContent) : window.__NEXT_DATA__;
 }
+
+export function arrayOfNodesWith(what) {
+    var nodes;
+    if (what.jquery) {
+        nodes = what.toArray();
+    } else if (what instanceof Array) {
+        nodes = what.map(item => arrayOfNodesWith(item)).flat(Infinity);
+    } else if (what instanceof Node) {
+        nodes = [what];
+    } else if (what instanceof NodeList) {
+        nodes = Array.from(what);
+    } else if (typeof what === 'string') {
+        nodes = Array.from(document.querySelectorAll(what));
+    } else {
+        throw "*** arrayOfNodesWith: Got something unusable as 'what' param";
+    }
+    return nodes;
+}
+export function watchIntersection(targets, options, yes_handler, no_handler) {
+    var i, io, len, ref, target;
+    io = new IntersectionObserver(function(entries, observer) {
+        for (const entry of entries) {
+            entry.isIntersecting ? yes_handler?.call(this, entry.target, observer) : no_handler?.call(this, entry.target, observer);
+        }
+    }, {
+        threshold: 1,
+        ...options
+    });
+    ref = arrayOfNodesWith(targets);
+    for (i = 0, len = ref.length; i < len; i++) {
+        target = ref[i];
+        io.observe(target);
+    }
+    return io;
+}
