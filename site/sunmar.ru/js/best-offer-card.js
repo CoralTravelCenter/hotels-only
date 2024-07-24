@@ -1,5 +1,5 @@
 import { watchIntersection } from "../../common/js/usefuls";
-import { fetchArrivalLocation, fetchBestOffer } from "./api-adapter";
+import { fetchArrivalLocation, fetchBestOffer, fetchOfferListLink } from "./api-adapter";
 import dayjs from "dayjs";
 import './prototypes';
 
@@ -15,8 +15,10 @@ export class BestOfferCard {
     offerPricePlaceholderEl;
 
     constructor(host_el, options = {}) {
+        this.opt = Object.assign({}, options);
         this.el = host_el;
         this.offerPricePlaceholderEl = this.el.querySelector('.offer-price-placeholder');
+        this.offersListLinkEl = this.el.querySelector('a.offers-list-link');
         this.init();
     }
 
@@ -25,7 +27,7 @@ export class BestOfferCard {
             this.destination = this.el.dataset.destination;
             // this.destinationType = this.el.dataset.destinationType;
             Object.assign(this, this.el.dataset);
-            watchIntersection(this.el, {}, (el, observer) => {
+            watchIntersection(this.el, this.opt, (el, observer) => {
                 observer.unobserve(el);
                 this.becameVisible();
             });
@@ -48,6 +50,9 @@ export class BestOfferCard {
         const arrival_location = await fetchArrivalLocation(this.destination, this.destinationType);
         console.log('=== arrival_location: %o', arrival_location);
 
+        const paging_default = { paging: { pageNumber: 1, pageSize: 20, sortType: 0 }};
+        const paging_single = { paging: { pageNumber: 1, pageSize: 1, sortType: 0 } };
+
         const nights = Array.isArray(this.lookupNights)
             ? this.lookupNights.sort((a, b) => a - b).map(n => ({ value: Number(n) }))
             : this.lookupNights.split(/\s*,\s*/).map(n => ({ value: Number(n) })).sort((a, b) => a - b);
@@ -63,12 +68,18 @@ export class BestOfferCard {
             additionalFilters: [],
             roomCriterias: [{ passengers: [{ age: 20, passengerType: 0 }, { age: 20, passengerType: 0 }] }],
             imageSizes: [0],
-            paging: { pageNumber: 1, pageSize: 1, sortType: 0 },
+            // paging: { pageNumber: 1, pageSize: 1, sortType: 0 },
         };
-        const best_offer = await fetchBestOffer(query);
+        const [best_offer, offers_list_link] = await Promise.all([
+            fetchBestOffer(Object.assign({}, query, paging_single)),
+            fetchOfferListLink(Object.assign({}, query, paging_default))
+        ]);
         console.log('=== best_offer: %o', best_offer);
+        console.log('=== offers_list_link: %o', offers_list_link);
 
-        this.offerPricePlaceholderEl.textContent = best_offer?.price?.amount?.formatCurrency();
+        this.offerPricePlaceholderEl.textContent = (best_offer?.price?.amount / best_offer.stayNights).formatCurrency();
+        this.offerPricePlaceholderEl.href = `/hotels${ best_offer.link.redirectionUrl }/?qp=${ best_offer.link.queryParam }&p=2`;
+        this.offersListLinkEl.href = `${ offers_list_link.redirectionUrl }/?qp=${ offers_list_link.queryParam }&p=2&w=0&s=0`;
 
     }
 

@@ -5,7 +5,7 @@ import { hostReactAppReady } from "../../common/js/usefuls";
     await hostReactAppReady();
 
     for (const card of document.querySelectorAll('[data-destination]')) {
-        new BestOfferCard(card);
+        new BestOfferCard(card, { threshold: 1/3 });
     }
 
 })();

@@ -32,3 +32,12 @@ export async function fetchBestOffer(query) {
     return response_json.result?.products?.at(0)?.offers?.at(0);
 
 }
+
+export async function fetchOfferListLink(query) {
+    const response_json = await fetch(endpointUrl('/OnlyHotelProduct/PriceSearchEncrypt'), {
+        method: 'post',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(query),
+    }).then(response => response.json());
+    return response_json.result;
+}

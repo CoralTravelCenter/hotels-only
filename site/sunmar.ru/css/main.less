@@ -1,4 +1,5 @@
 @import "../../common/css/layout";
+@import "../../common/css/sunmar-mixins";
 
 
 section {
@@ -41,6 +42,9 @@ section {
 		h2 {
 			line-height: 1;
 			text-align: center;
+			@media screen and (max-width: @mobile-breakpoint) {
+				text-align: left;
+			}
 		}
 	}
 
@@ -121,19 +125,57 @@ section.why-only-hotel {
 }
 
 section.pop-countries {
+	.bbox();
 	.pop-countries-slider {
 		display: flex;
+		justify-content: space-between;
 		gap: 32px;
 		.pop-country-card {
-			flex: 240;
+			height: 510px;
+			flex: 0 0 calc((60% - 3 * 32px) / 3);
 			display: flex;
+			align-items: flex-start;
 			flex-direction: column;
 			gap: 1em;
 			padding: 1em;
 			line-height: 1;
+			border-radius: 12px;
+			background: center/ cover no-repeat ;
+			color: white;
+			text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+			.transit(flex-basis, .25s);
+			&.default:not(:has(~:hover)), &:hover {
+				flex: 0 0 40%;
+				a.offers-list-link {
+					pointer-events: auto;
+					opacity: 1;
+				}
+			}
+			&[data-destination="Турция"] {
+				background-image: url(/site/sunmar.ru/assets/pop-turkey.jpg);
+			}
+			&[data-destination="ОАЭ"] {
+				background-image: url(/site/sunmar.ru/assets/pop-uae.jpg);
+			}
+			&[data-destination="Египет"] {
+				background-image: url(/site/sunmar.ru/assets/pop-egypt.jpg);
+			}
+			&[data-destination="Таиланд"] {
+				background-image: url(/site/sunmar.ru/assets/pop-thailand.jpg);
+			}
 			h3 {
 				line-height: 1;
 				margin: 0;
+			}
+			a.offers-list-link {
+				.knopf();
+				pointer-events: none;
+				opacity: 0;
+				.transit(opacity, .4s);
+			}
+			a.offers-list-link:not([href]) {
+				pointer-events: none!important;
+				opacity: 0!important;
 			}
 		}
 	}
@@ -141,6 +183,20 @@ section.pop-countries {
 
 
 .offer-price-placeholder {
+	.interactive();
+	display: inline-block;
+	text-decoration: none!important;
+	color: inherit!important;
+	padding-bottom: 2px;
+	border-bottom: 1px solid transparent;
+	&:hover {
+		border-bottom-color: currentColor;
+	}
+	&[href]:before {
+		content: 'от';
+		font-size: 70%;
+		margin-right: .5em;
+	}
 	.loader {
 		width: 3em;
 		aspect-ratio: 4;
