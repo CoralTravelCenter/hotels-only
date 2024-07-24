@@ -1,5 +1,5 @@
 import { watchIntersection } from "../../common/js/usefuls";
-import { fetchArrivalLocation, fetchBestOffer, fetchOfferListLink } from "./api-adapter";
+import { fetchArrivalLocation, fetchBestOffer, fetchOffersListLink } from "./api-adapter";
 import dayjs from "dayjs";
 import './prototypes';
 
@@ -48,7 +48,7 @@ export class BestOfferCard {
         this.showProgress();
 
         const arrival_location = await fetchArrivalLocation(this.destination, this.destinationType);
-        console.log('=== arrival_location: %o', arrival_location);
+        // console.log('=== arrival_location: %o', arrival_location);
 
         const paging_default = { paging: { pageNumber: 1, pageSize: 20, sortType: 0 }};
         const paging_single = { paging: { pageNumber: 1, pageSize: 1, sortType: 0 } };
@@ -57,7 +57,7 @@ export class BestOfferCard {
             ? this.lookupNights.sort((a, b) => a - b).map(n => ({ value: Number(n) }))
             : this.lookupNights.split(/\s*,\s*/).map(n => ({ value: Number(n) })).sort((a, b) => a - b);
 
-        var query = {
+        const query = {
             arrivalLocations: [arrival_location],
             beginDates: [
                 dayjs().add(Number(this.lookupShiftDays), 'days').format('YYYY-MM-DD'),
@@ -72,10 +72,10 @@ export class BestOfferCard {
         };
         const [best_offer, offers_list_link] = await Promise.all([
             fetchBestOffer(Object.assign({}, query, paging_single)),
-            fetchOfferListLink(Object.assign({}, query, paging_default))
+            fetchOffersListLink(Object.assign({}, query, paging_default))
         ]);
-        console.log('=== best_offer: %o', best_offer);
-        console.log('=== offers_list_link: %o', offers_list_link);
+        // console.log('=== best_offer: %o', best_offer);
+        // console.log('=== offers_list_link: %o', offers_list_link);
 
         this.offerPricePlaceholderEl.textContent = (best_offer?.price?.amount / best_offer.stayNights).formatCurrency();
         this.offerPricePlaceholderEl.href = `/hotels${ best_offer.link.redirectionUrl }/?qp=${ best_offer.link.queryParam }&p=2`;

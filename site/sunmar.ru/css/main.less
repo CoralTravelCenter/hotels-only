@@ -130,8 +130,16 @@ section.pop-countries {
 		display: flex;
 		justify-content: space-between;
 		gap: 32px;
+		@media screen and (max-width: @mobile-breakpoint) {
+		    overflow: auto;
+			scroll-snap-type: x mandatory;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
 		.pop-country-card {
 			height: 510px;
+			overflow: hidden;
 			flex: 0 0 calc((60% - 3 * 32px) / 3);
 			display: flex;
 			align-items: flex-start;
@@ -144,6 +152,21 @@ section.pop-countries {
 			color: white;
 			text-shadow: 0 2px 8px rgba(0,0,0,0.2);
 			.transit(flex-basis, .25s);
+			@media screen and (max-width: @wide-breakpoint) {
+				height: 33vw;
+			}
+			@media screen and (max-width: @mid-breakpoint) {
+				font-size: 1.667vw;
+			}
+			@media screen and (max-width: @mobile-breakpoint) {
+			    flex: 0 0 100%!important;
+				align-items: center;
+				height: 95vw;
+				font-size: 5vw;
+				padding: 1.5em;
+				scroll-snap-align: center;
+				overscroll-behavior: none;
+			}
 			&.default:not(:has(~:hover)), &:hover {
 				flex: 0 0 40%;
 				a.offers-list-link {
@@ -172,6 +195,10 @@ section.pop-countries {
 				pointer-events: none;
 				opacity: 0;
 				.transit(opacity, .4s);
+				@media screen and (max-width: @mobile-breakpoint) {
+					pointer-events: auto;
+				    opacity: 1;
+				}
 			}
 			a.offers-list-link:not([href]) {
 				pointer-events: none!important;
