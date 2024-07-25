@@ -3,7 +3,7 @@
 ul.scroll-pager {
 	list-style: none;
 	margin: 0;
-	padding: 8px 0;
+	padding: 16px 0;
 	display: flex;
 	justify-content: center;
 	gap: 4px;
@@ -14,6 +14,43 @@ ul.scroll-pager {
 		.transit(background);
 		&.current {
 			background: radial-gradient(closest-side at center, #0E2855 0 60%, transparent 65% 80%, #0E2855 85% 95%, transparent 100%);
+		}
+	}
+}
+
+.scroll-shifter {
+	pointer-events: none;
+	position: absolute;
+	width: calc(~"100% + 100px + 64px");
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	justify-content: space-between;
+	>button {
+		pointer-events: auto;
+		border: 0;
+		width: 50px;
+		height: 50px;
+		border-radius: 8px;
+		box-shadow: 0 2px 32px fade(black, 12%);
+		background: white;
+		padding: 0;
+		cursor: pointer;
+		background: url("data-url:/site/sunmar.ru/assets-inline/arrow-left.svg") center no-repeat;
+		transition: opacity .3s;
+		&.disabled {
+			opacity: 0;
+			pointer-events: none;
+		}
+		&:active {
+			transform+: translateY(2px);
+		}
+		&.forward {
+			transform: scaleX(-1);
+			&:active {
+				transform+: scaleX(-1) translateY(2px);
+			}
 		}
 	}
 }

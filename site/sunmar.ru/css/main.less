@@ -225,14 +225,15 @@ section.pop-countries {
 
 section.other-countries {
 	.bbox();
+	position: relative;
 	.other-countries-combo {
 		display: flex;
 		flex-direction: column;
-		.scroll-pager {
-			@media screen and (min-width: (@mobile-breakpoint + 1)) {
-				display: none;
-			}
-		}
+		//.scroll-pager {
+		//	@media screen and (min-width: (@mobile-breakpoint + 1)) {
+		//		display: none;
+		//	}
+		//}
 	}
 	.other-countries-slider {
 		display: flex;
@@ -240,17 +241,30 @@ section.other-countries {
 		gap: 32px;
 		overflow: auto;
 		scroll-snap-type: x mandatory;
+		filter: drop-shadow(0 20px 40px fade(#141416,10%));
 		&::-webkit-scrollbar {
 			display: none;
 		}
 		.other-country-card {
-			background: #def;
+			background: white;
 			flex: 0 0 calc(~"(100% - 64px) / 3");
 			display: flex;
 			flex-direction: column;
-			align-items: center;
 			scroll-snap-align: center;
-
+			border-radius: 12px;
+			overflow: hidden;
+			.visual {
+				.proportional(16/9);
+				background: center / cover no-repeat;
+			}
+			.info {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 1em 1em 1.5em;
+				gap: 12px;
+				line-height: 1;
+			}
 			h3 {
 				line-height: 1;
 				margin: 0;

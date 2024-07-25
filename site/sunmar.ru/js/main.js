@@ -13,5 +13,10 @@ import { ScrollPager } from "./scroll-pager/scroll-pager";
     }
 
     new ScrollPager(document.querySelector('.pop-countries-slider'), document.querySelector('.pop-countries-combo .scroll-pager'));
+    new ScrollPager(
+        document.querySelector('.other-countries-slider'),
+        document.querySelector('.other-countries-combo .scroll-pager'),
+        document.querySelector('.other-countries-combo .scroll-shifter')
+        );
 
 })();
