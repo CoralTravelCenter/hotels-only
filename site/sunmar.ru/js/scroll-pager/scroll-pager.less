@@ -1,0 +1,19 @@
+@import "../../../common/css/layout";
+
+ul.scroll-pager {
+	list-style: none;
+	margin: 0;
+	padding: 8px 0;
+	display: flex;
+	justify-content: center;
+	gap: 4px;
+	>li {
+		width: 16px;
+		height: 16px;
+		background: radial-gradient(closest-side at center, #0E28554C 0 60%, transparent 65% 100%);
+		.transit(background);
+		&.current {
+			background: radial-gradient(closest-side at center, #0E2855 0 60%, transparent 65% 80%, #0E2855 85% 95%, transparent 100%);
+		}
+	}
+}

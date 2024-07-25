@@ -1,6 +1,11 @@
 @import "../../common/css/layout";
 @import "../../common/css/sunmar-mixins";
 
+#__next .row-container.visible-overflow-desktop {
+	@media screen and (min-width: (@mobile-breakpoint + 1)) {
+	    overflow: visible;
+	}
+}
 
 section {
 	font-size: 20px;
@@ -36,7 +41,8 @@ section {
 	}
 
 	.common-grid {
-		display: grid;
+		display: flex;
+		flex-direction: column;
 		gap: (32/20em);
 		padding: 4em 0;
 		h2 {
@@ -126,6 +132,15 @@ section.why-only-hotel {
 
 section.pop-countries {
 	.bbox();
+	.pop-countries-combo {
+		display: flex;
+		flex-direction: column;
+		.scroll-pager {
+			@media screen and (min-width: (@mobile-breakpoint + 1)) {
+			    display: none;
+			}
+		}
+	}
 	.pop-countries-slider {
 		display: flex;
 		justify-content: space-between;
@@ -208,6 +223,52 @@ section.pop-countries {
 	}
 }
 
+section.other-countries {
+	.bbox();
+	.other-countries-combo {
+		display: flex;
+		flex-direction: column;
+		.scroll-pager {
+			@media screen and (min-width: (@mobile-breakpoint + 1)) {
+				display: none;
+			}
+		}
+	}
+	.other-countries-slider {
+		display: flex;
+		justify-content: space-between;
+		gap: 32px;
+		overflow: auto;
+		scroll-snap-type: x mandatory;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		.other-country-card {
+			background: #def;
+			flex: 0 0 calc(~"(100% - 64px) / 3");
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			scroll-snap-align: center;
+
+			h3 {
+				line-height: 1;
+				margin: 0;
+			}
+			a.offers-list-link {
+				.knopf();
+				pointer-events: auto;
+				opacity: 1;
+				.transit(opacity, .4s);
+			}
+			a.offers-list-link:not([href]) {
+				pointer-events: none!important;
+				opacity: 0!important;
+			}
+
+		}
+	}
+}
 
 .offer-price-placeholder {
 	.interactive();
@@ -239,20 +300,3 @@ section.pop-countries {
 	}
 }
 
-ul.scroll-pager {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	gap: 4px;
-	>li {
-		width: 16px;
-		height: 16px;
-		background: radial-gradient(closest-side at center, #0E28554C 0 60%, transparent 65% 100%);
-		.transit(background);
-		&.current {
-			background: radial-gradient(closest-side at center, #0E2855 0 60%, transparent 65% 80%, #0E2855 85% 95%, transparent 100%);
-		}
-	}
-}

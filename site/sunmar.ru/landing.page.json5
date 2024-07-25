@@ -11,6 +11,7 @@
         '/site/sunmar.ru/markup/hotels-of-the-week-setup.html',
         '/site/sunmar.ru/markup/hotels-of-the-week-runtime.html',
         '/site/sunmar.ru/markup/popular-countries.html',
+        '/site/sunmar.ru/markup/other-countries.html',
         '/site/sunmar.ru/markup/main-script.html'
     ]
 }
