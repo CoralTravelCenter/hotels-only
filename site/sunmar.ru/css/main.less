@@ -253,6 +253,18 @@ section.other-countries {
 			scroll-snap-align: center;
 			border-radius: 12px;
 			overflow: hidden;
+			@media screen and (max-width: @mid-breakpoint) {
+				font-size: 1.667vw;
+			}
+			@media screen and (max-width: @mobile-breakpoint) {
+				flex: 0 0 calc(~"(100% - 32px) / 2");
+				scroll-snap-align: start;
+			}
+			@media screen and (max-width: @narrow-breakpoint) {
+				flex: 0 0 100%;
+				scroll-snap-align: center;
+				font-size: 5vw;
+			}
 			.visual {
 				.proportional(16/9);
 				background: center / cover no-repeat;

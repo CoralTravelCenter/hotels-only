@@ -44,6 +44,14 @@ export class ScrollPager {
             });
         }
 
+        this.pagerEl.addEventListener('click', (e) => {
+            const page_idx = [...this.pagerEl.children].indexOf(e.target);
+            if (~page_idx) {
+                const slide_el = this.scrollerEl.children[page_idx];
+                slide_el.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+
         watchIntersection(this.scrollerEl.children, { root: this.scrollerEl, threshold: .66 }, (el) => {
             this.pagerEl.children[[...this.scrollerEl.children].indexOf(el)].classList.add('current');
         }, (el) => {
