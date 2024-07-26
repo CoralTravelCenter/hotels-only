@@ -229,11 +229,15 @@ section.other-countries {
 	.other-countries-combo {
 		display: flex;
 		flex-direction: column;
-		//.scroll-pager {
-		//	@media screen and (min-width: (@mobile-breakpoint + 1)) {
-		//		display: none;
-		//	}
-		//}
+		@media screen and (max-width: @narrow-breakpoint) {
+		    transform: translateZ(0);
+			height: 70vw;
+		}
+	}
+	.scroll-pager {
+		@media screen and (max-width: @narrow-breakpoint) {
+			margin-top: 70vw;
+		}
 	}
 	.other-countries-slider {
 		display: flex;
@@ -245,7 +249,13 @@ section.other-countries {
 		&::-webkit-scrollbar {
 			display: none;
 		}
+		@media screen and (max-width: @narrow-breakpoint) {
+			position: fixed;
+			width: 100vw;
+			left: -16px;
+		}
 		.other-country-card {
+			position: relative;
 			background: white;
 			flex: 0 0 calc(~"(100% - 64px) / 3");
 			display: flex;
@@ -253,6 +263,11 @@ section.other-countries {
 			scroll-snap-align: center;
 			border-radius: 12px;
 			overflow: hidden;
+			&:nth-child(1) {
+				@media screen and (max-width: @narrow-breakpoint) {
+					margin-left: 16px;
+				}
+			}
 			@media screen and (max-width: @mid-breakpoint) {
 				font-size: 1.667vw;
 			}
@@ -261,13 +276,17 @@ section.other-countries {
 				scroll-snap-align: start;
 			}
 			@media screen and (max-width: @narrow-breakpoint) {
-				flex: 0 0 100%;
+				//flex: 0 0 100%;
+				flex: 0 0 70%;
 				scroll-snap-align: center;
 				font-size: 5vw;
 			}
 			.visual {
 				.proportional(16/9);
 				background: center / cover no-repeat;
+				@media screen and (max-width: @narrow-breakpoint) {
+				    .proportional(1/1);
+				}
 			}
 			.info {
 				display: flex;
@@ -276,6 +295,16 @@ section.other-countries {
 				padding: 1em 1em 1.5em;
 				gap: 12px;
 				line-height: 1;
+				@media screen and (max-width: @narrow-breakpoint) {
+					position: absolute;
+					left: 0;
+					top: 0;
+					inset: 0;
+					align-items: stretch;
+					color: white;
+					text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+					padding: 1em 1em 1em;
+				}
 			}
 			h3 {
 				line-height: 1;
@@ -286,6 +315,9 @@ section.other-countries {
 				pointer-events: auto;
 				opacity: 1;
 				.transit(opacity, .4s);
+				@media screen and (max-width: @narrow-breakpoint) {
+					margin-top: auto;
+				}
 			}
 			a.offers-list-link:not([href]) {
 				pointer-events: none!important;
