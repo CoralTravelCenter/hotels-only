@@ -11,12 +11,20 @@ import { ScrollPager } from "./scroll-pager/scroll-pager";
     for (const card of document.querySelectorAll('.other-country-card[data-destination]')) {
         new BestOfferCard(card, { threshold: 1/3 });
     }
+    for (const card of document.querySelectorAll('.resorts.turkey .resort-card[data-destination]')) {
+        new BestOfferCard(card, { threshold: 1/3 });
+    }
 
     new ScrollPager(document.querySelector('.pop-countries-slider'), document.querySelector('.pop-countries-combo .scroll-pager'));
     new ScrollPager(
         document.querySelector('.other-countries-slider'),
         document.querySelector('.other-countries-combo .scroll-pager'),
         document.querySelector('.other-countries-combo .scroll-shifter')
+        );
+    new ScrollPager(
+        document.querySelector('.resorts.turkey .resorts-slider'),
+        document.querySelector('.resorts.turkey .scroll-pager'),
+        document.querySelector('.resorts.turkey .scroll-shifter')
         );
 
 })();

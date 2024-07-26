@@ -263,9 +263,14 @@ section.other-countries {
 			scroll-snap-align: center;
 			border-radius: 12px;
 			overflow: hidden;
-			&:nth-child(1) {
+			&:first-child {
 				@media screen and (max-width: @narrow-breakpoint) {
 					margin-left: 16px;
+				}
+			}
+			&:last-child {
+				@media screen and (max-width: @narrow-breakpoint) {
+					margin-right: 16px;
 				}
 			}
 			@media screen and (max-width: @mid-breakpoint) {
@@ -324,6 +329,117 @@ section.other-countries {
 				opacity: 0!important;
 			}
 
+		}
+	}
+}
+
+section.resorts {
+	.bbox();
+	position: relative;
+	.resorts-combo {
+		display: flex;
+		flex-direction: column;
+		@media screen and (max-width: @narrow-breakpoint) {
+			transform: translateZ(0);
+			height: 40vw;
+		}
+	}
+	.scroll-pager {
+		@media screen and (max-width: @narrow-breakpoint) {
+			margin-top: 40vw;
+		}
+	}
+	.resorts-slider {
+		display: flex;
+		justify-content: space-between;
+		gap: 32px;
+		overflow: auto;
+		scroll-snap-type: x mandatory;
+		filter: drop-shadow(0 20px 40px fade(#141416,10%));
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		@media screen and (max-width: @narrow-breakpoint) {
+			position: fixed;
+			width: 100vw;
+			left: -16px;
+		}
+		.resort-card {
+			.proportional(16/9);
+			flex: 0 0 calc(~"(100% - (32px * 3)) / 4");
+			scroll-snap-align: start;
+			border-radius: 12px;
+			overflow: hidden;
+			&:before {
+				background: var(--visual-url) center / cover no-repeat;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				inset: 0;
+				background: linear-gradient(to bottom, #000000AA, #00000000 50%);
+			}
+			&:first-child {
+				@media screen and (max-width: @narrow-breakpoint) {
+					margin-left: 16px;
+				}
+			}
+			&:last-child {
+				@media screen and (max-width: @narrow-breakpoint) {
+					margin-right: 16px;
+				}
+			}
+			@media screen and (max-width: @mid-breakpoint) {
+				flex: 0 0 calc(~"(100% - 32px * 2) / 3");
+				font-size: 1.667vw;
+			}
+			@media screen and (max-width: @mobile-breakpoint) {
+				flex: 0 0 calc(~"(100% - 32px) / 2");
+				scroll-snap-align: start;
+			}
+			@media screen and (max-width: @narrow-breakpoint) {
+				//flex: 0 0 100%;
+				flex: 0 0 70%;
+				scroll-snap-align: center;
+				font-size: 5vw;
+			}
+			.info {
+				z-index: 1;
+				display: flex;
+				flex-direction: column;
+				gap: 12px;
+				align-items: flex-start;
+				padding: .7em 1em 1em;
+				color: white;
+				@media screen and (max-width: @mobile-breakpoint) {
+					a.offers-list-link[href] {
+						opacity: 1!important;
+						pointer-events: auto!important;
+					}
+				}
+				&:hover {
+					a.offers-list-link {
+						opacity: 1;
+						pointer-events: auto;
+					}
+				}
+				h3 {
+					line-height: 1;
+					margin: 0;
+				}
+				a.offers-list-link {
+					.knopf();
+					margin-top: auto;
+					width: 100%;
+					opacity: 0;
+					pointer-events: none;
+					.transit(opacity, .25s);
+					&:not([href]) {
+						opacity: 0!important;
+						pointer-events: none!important;
+					}
+				}
+			}
 		}
 	}
 }
