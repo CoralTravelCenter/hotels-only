@@ -8,6 +8,7 @@ export class BestOfferCard {
     el;
     destination;
     destinationType;
+    destinationLocation;
     lookupShiftDays = 14;
     lookupDepthDays = 30;
     lookupNights = [7];
@@ -27,6 +28,7 @@ export class BestOfferCard {
         if (dataset.destination) {
             this.destination = dataset.destination;
             if (dataset.destinationType !== undefined) this.destinationType = dataset.destinationType;
+            if (dataset.destinationLocation !== undefined) this.destinationLocation = dataset.destinationLocation;
             Object.assign(this, dataset);
             watchIntersection(this.el, this.opt, (el, observer) => {
                 observer.unobserve(el);
@@ -58,6 +60,24 @@ export class BestOfferCard {
             ? this.lookupNights.sort((a, b) => a - b).map(n => ({ value: Number(n) }))
             : this.lookupNights.split(/\s*,\s*/).map(n => ({ value: Number(n) })).sort((a, b) => a - b);
 
+        let additionalFilters = [];
+        if (this.destinationLocation) {
+            const loc_values = { parent: null };
+            this.destinationLocation.split(/[ .]+/).reduce((values, loc_id, idx, list) => {
+                if (values.id) {
+                    values.parent = { id: loc_id, value: loc_id, parent: null };
+                    return values.parent;
+                } else {
+                    values.value = values.id = loc_id;
+                    return values;
+                }
+            }, loc_values);
+            additionalFilters = [
+                { "type": 21, "values": [{ "id": "2", "value": "2", "parent": null }], "providers": null },
+                { "type": 4, "values": [loc_values], "providers": [] }
+            ];
+        }
+
         const query = {
             arrivalLocations: [arrival_location],
             beginDates: [
@@ -66,7 +86,7 @@ export class BestOfferCard {
             ],
             nights,
             reservationType: 2,
-            additionalFilters: [],
+            additionalFilters,
             roomCriterias: [{ passengers: [{ age: 20, passengerType: 0 }, { age: 20, passengerType: 0 }] }],
             imageSizes: [0],
             // paging: { pageNumber: 1, pageSize: 1, sortType: 0 },

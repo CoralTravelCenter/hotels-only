@@ -5,16 +5,20 @@ function endpointUrl(endpoint) {
 
 export async function fetchArrivalLocation(keyword, type) {
     const endpoint = endpointUrl('/OnlyHotelProduct/ListArrivalLocations');
+    const query = { text: keyword };
+    if (type !== undefined) {
+        query.locationTypes = [Number(type)];
+    }
     let { result: { locations } } = await fetch(endpoint, {
         method: 'post',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text: keyword })
+        body: JSON.stringify(query)
     }).then(response => response.json());
 
     if (locations?.length) {
-        if (type !== undefined) {
-            locations = locations.filter(loc => loc.type === Number(type));
-        }
+        // if (type !== undefined) {
+        //     locations = locations.filter(loc => loc.type === Number(type));
+        // }
         return locations.at(0);
     } else {
         return null;
