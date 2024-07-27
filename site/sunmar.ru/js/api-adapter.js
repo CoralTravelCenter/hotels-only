@@ -19,7 +19,7 @@ export async function fetchArrivalLocation(keyword, type) {
         // if (type !== undefined) {
         //     locations = locations.filter(loc => loc.type === Number(type));
         // }
-        return locations.at(0);
+        return locations.find(loc => keyword.toUpperCase() === loc.name.toUpperCase()) || locations.at(0);
     } else {
         return null;
     }
