@@ -1,7 +1,10 @@
 import { watchIntersection } from "../../common/js/usefuls";
 import { fetchArrivalLocation, fetchBestOffer, fetchOffersListLink } from "./api-adapter";
 import dayjs from "dayjs";
+import minMax from 'dayjs/plugin/minMax'
 import './prototypes';
+
+dayjs.extend(minMax);
 
 export class BestOfferCard {
 
@@ -10,6 +13,7 @@ export class BestOfferCard {
     destinationType;
     destinationLocation;
     lookupShiftDays = 14;
+    lookupShiftSince;
     lookupDepthDays = 30;
     lookupNights = [7];
 
@@ -29,6 +33,7 @@ export class BestOfferCard {
             this.destination = dataset.destination;
             if (dataset.destinationType !== undefined) this.destinationType = dataset.destinationType;
             if (dataset.destinationLocation !== undefined) this.destinationLocation = dataset.destinationLocation;
+            if (dataset.lookupShiftSince !== undefined) this.lookupShiftSince = dataset.lookupShiftSince;
             Object.assign(this, dataset);
             watchIntersection(this.el, this.opt, (el, observer) => {
                 observer.unobserve(el);
@@ -78,11 +83,12 @@ export class BestOfferCard {
             ];
         }
 
+        const lookup_since = dayjs.max(dayjs(), dayjs(this.lookupShiftSince));
         const query = {
             arrivalLocations: [arrival_location],
             beginDates: [
-                dayjs().add(Number(this.lookupShiftDays), 'days').format('YYYY-MM-DD'),
-                dayjs().add(Number(this.lookupShiftDays) + Number(this.lookupDepthDays), 'days').format('YYYY-MM-DD'),
+                lookup_since.add(Number(this.lookupShiftDays), 'days').format('YYYY-MM-DD'),
+                lookup_since.add(Number(this.lookupShiftDays) + Number(this.lookupDepthDays), 'days').format('YYYY-MM-DD'),
             ],
             nights,
             reservationType: 2,
