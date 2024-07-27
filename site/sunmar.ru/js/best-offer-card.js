@@ -7,7 +7,7 @@ export class BestOfferCard {
 
     el;
     destination;
-    destinationType = 0;
+    destinationType;
     lookupShiftDays = 14;
     lookupDepthDays = 30;
     lookupNights = [7];
@@ -23,10 +23,11 @@ export class BestOfferCard {
     }
 
     init() {
-        if (this.el.dataset.destination) {
-            this.destination = this.el.dataset.destination;
-            // this.destinationType = this.el.dataset.destinationType;
-            Object.assign(this, this.el.dataset);
+        const dataset = this.el.dataset;
+        if (dataset.destination) {
+            this.destination = dataset.destination;
+            if (dataset.destinationType !== undefined) this.destinationType = dataset.destinationType;
+            Object.assign(this, dataset);
             watchIntersection(this.el, this.opt, (el, observer) => {
                 observer.unobserve(el);
                 this.becameVisible();
