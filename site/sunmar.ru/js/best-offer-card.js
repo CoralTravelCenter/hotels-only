@@ -104,8 +104,13 @@ export class BestOfferCard {
         // console.log('=== best_offer: %o', best_offer);
         // console.log('=== offers_list_link: %o', offers_list_link);
 
-        this.offerPricePlaceholderEl.textContent = (best_offer?.price?.amount / best_offer.stayNights).formatCurrency();
-        this.offerPricePlaceholderEl.href = `/hotels${ best_offer.link.redirectionUrl }/?qp=${ best_offer.link.queryParam }&p=2`;
+        const best_offer_price = best_offer ? (best_offer?.price?.amount / best_offer.stayNights) : 0.0;
+        if (best_offer_price) {
+            this.offerPricePlaceholderEl.textContent = best_offer_price.formatCurrency();
+            this.offerPricePlaceholderEl.href = `/hotels${ best_offer.link.redirectionUrl }/?qp=${ best_offer.link.queryParam }&p=2`;
+        } else {
+            this.offerPricePlaceholderEl.textContent = '';
+        }
         this.offersListLinkEl.href = `${ offers_list_link.redirectionUrl }/?qp=${ offers_list_link.queryParam }&p=2&w=0&s=0`;
 
     }

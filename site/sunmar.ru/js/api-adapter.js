@@ -1,15 +1,14 @@
 function endpointUrl(endpoint) {
-    const host = location.hostname === 'localhost' ? 'http://localhost:8010/proxy' : location.hostname.replace('www', 'b2capi');
+    const host = location.hostname === 'localhost' ? 'http://localhost:8010/proxy' : '//' + location.hostname.replace(/www|new/, 'b2capi');
     return host + endpoint;
 }
 
 export async function fetchArrivalLocation(keyword, type) {
-    const endpoint = endpointUrl('/OnlyHotelProduct/ListArrivalLocations');
     const query = { text: keyword };
     if (type !== undefined) {
         query.locationTypes = [Number(type)];
     }
-    let { result: { locations } } = await fetch(endpoint, {
+    let { result: { locations } } = await fetch(endpointUrl('/OnlyHotelProduct/ListArrivalLocations'), {
         method: 'post',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(query)

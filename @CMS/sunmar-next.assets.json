@@ -1,0 +1,467 @@
+[
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/pop-uae.jpg",
+        "relativePath": "pop-uae.jpg",
+        "md5": "20960587c45380af6d11065756c18af4"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/pop-thailand.jpg",
+        "relativePath": "pop-thailand.jpg",
+        "md5": "e01cd10fc1e64765721f1103037bde80"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/other-vietnam.jpg",
+        "relativePath": "other-vietnam.jpg",
+        "md5": "e57796e6dc59e95b954ad71de4b7fcff"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/pop-egypt.jpg",
+        "relativePath": "pop-egypt.jpg",
+        "md5": "fee4088287ed314e02edf5acddf80e7c"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/pop-turkey.jpg",
+        "relativePath": "pop-turkey.jpg",
+        "md5": "9a8d73a82f5698ff05da8e600ee71bc2"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/other-srilanka.jpg",
+        "relativePath": "other-srilanka.jpg",
+        "md5": "0138b43ae52b4c5e88f7c8d2c767a82c"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/other-montenegro.jpg",
+        "relativePath": "other-montenegro.jpg",
+        "md5": "394dafd67ecdb1802aea86d972aa10d6"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/other-russia.jpg",
+        "relativePath": "other-russia.jpg",
+        "md5": "937be5100f81f5d77ff54a84b4e92f80"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/other-spain.jpg",
+        "relativePath": "other-spain.jpg",
+        "md5": "4ef3c49509801cbe4a829489c094363a"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/other-cuba.jpg",
+        "relativePath": "other-cuba.jpg",
+        "md5": "ed64572ce43f1dcd9146688b9e1d6d71"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/other-maldives.jpg",
+        "relativePath": "other-maldives.jpg",
+        "md5": "7ddbca1466cf2fdcb391e81b1aec008c"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/other-bulgaria.jpg",
+        "relativePath": "other-bulgaria.jpg",
+        "md5": "b743058bfb13ce7145cc7ee1d77a902b"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/other-abhasia.jpg",
+        "relativePath": "other-abhasia.jpg",
+        "md5": "0ea35b05f1d79eae4791833ab0698095"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/kv-mobile.jpg",
+        "relativePath": "kv-mobile.jpg",
+        "md5": "99dde6933b57bac0735950d8e3f3161b"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/icon-quick.png",
+        "relativePath": "icon-quick.png",
+        "md5": "543cd033822243bc86ce7e1e2e907595"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/kv-desktop.jpg",
+        "relativePath": "kv-desktop.jpg",
+        "md5": "5c7370cf6e22150fd95cb25253219ae2"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/icon-safe.png",
+        "relativePath": "icon-safe.png",
+        "md5": "fd7be076f7158c728abc71d034e3c59f"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/other-bahrain.jpg",
+        "relativePath": "other-bahrain.jpg",
+        "md5": "aa62e170504532fb663f9452391e34f4"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/icon-online.png",
+        "relativePath": "icon-online.png",
+        "md5": "4f465f51fee66df0ad2f06472592fabe"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/icon-careful.png",
+        "relativePath": "icon-careful.png",
+        "md5": "7a7304b22133aa75b26720e2d818cab7"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/uae/rasalkhaimah.jpg",
+        "relativePath": "resorts/uae/rasalkhaimah.jpg",
+        "md5": "f6e4af95626f3a636c01395b294c00cd"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/icon-fairly.png",
+        "relativePath": "icon-fairly.png",
+        "md5": "05b8fa5ce558a28b26a8682ceb056b3e"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/icon-cozy.png",
+        "relativePath": "icon-cozy.png",
+        "md5": "2c72a58354e7890d3c1c459fdefae665"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/uae/ummalquwain.jpg",
+        "relativePath": "resorts/uae/ummalquwain.jpg",
+        "md5": "b570c0f57295c065732d67ee8d30f20d"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/uae/dubai.jpg",
+        "relativePath": "resorts/uae/dubai.jpg",
+        "md5": "9d0d5e6fbd28174f8ed3d2a3a2b9fbba"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/uae/fujairah.jpg",
+        "relativePath": "resorts/uae/fujairah.jpg",
+        "md5": "d4a81418e1d4331e531a03175f2ed0af"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/uae/ajman.jpg",
+        "relativePath": "resorts/uae/ajman.jpg",
+        "md5": "474999c4c6c20265d94321f395085e72"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/uae/abudhabi.jpg",
+        "relativePath": "resorts/uae/abudhabi.jpg",
+        "md5": "4940d8bc9ccc2ffb297962b55d7f218d"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/ulugdag.jpg",
+        "relativePath": "resorts/turkey/ulugdag.jpg",
+        "md5": "1b48a58806308eb7b9176d61a00430b7"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/turunch.jpg",
+        "relativePath": "resorts/turkey/turunch.jpg",
+        "md5": "e8353f52dd88d94219f69cbb1f020404"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/side.jpg",
+        "relativePath": "resorts/turkey/side.jpg",
+        "md5": "715e75fb249927f2bcab51e758d29890"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/sarakamys.jpg",
+        "relativePath": "resorts/turkey/sarakamys.jpg",
+        "md5": "7c6dbcc20a9745b00c871402adf63fad"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/ozdere.jpg",
+        "relativePath": "resorts/turkey/ozdere.jpg",
+        "md5": "a7a945b2d43a1c556d4bd29662d63c30"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/oludeniz.jpg",
+        "relativePath": "resorts/turkey/oludeniz.jpg",
+        "md5": "6a5aa6253b0fcb2b27aac598eda03620"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/marmaris.jpg",
+        "relativePath": "resorts/turkey/marmaris.jpg",
+        "md5": "e4591885a5bca355cd88a9b430ca0f95"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/palandoken.jpg",
+        "relativePath": "resorts/turkey/palandoken.jpg",
+        "md5": "24d5ffc1c5f69325171fa33a64a4dd4f"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/kushadasy.jpg",
+        "relativePath": "resorts/turkey/kushadasy.jpg",
+        "md5": "cd6955754d6b13ca4a36b8e9702cc273"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/kundu.jpg",
+        "relativePath": "resorts/turkey/kundu.jpg",
+        "md5": "8a46a2fc4d2d850eabead4da237335a9"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/kumludgu.jpg",
+        "relativePath": "resorts/turkey/kumludgu.jpg",
+        "md5": "91fe0c0a503e20b0dde87a160104d790"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/kas.jpg",
+        "relativePath": "resorts/turkey/kas.jpg",
+        "md5": "93c065e43d85e00adf69ad58edf90412"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/kartalkaya.jpg",
+        "relativePath": "resorts/turkey/kartalkaya.jpg",
+        "md5": "b71c847f51e0c641b2654bdaa40aeb5f"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/kemer.jpg",
+        "relativePath": "resorts/turkey/kemer.jpg",
+        "md5": "66d9709ae4feade71817060e0e376f06"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/kappadikia.jpg",
+        "relativePath": "resorts/turkey/kappadikia.jpg",
+        "md5": "69949d2b4c9ecd7011b142c0acd774ca"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/kaiseri.jpg",
+        "relativePath": "resorts/turkey/kaiseri.jpg",
+        "md5": "eec0bc5c5c55a4a55948b5c0f0aa38dc"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/istanbul.jpg",
+        "relativePath": "resorts/turkey/istanbul.jpg",
+        "md5": "f2c01dd98a0a95988c8f0fa97e18d20f"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/izmir.jpg",
+        "relativePath": "resorts/turkey/izmir.jpg",
+        "md5": "03851cb119d5b56bc4dedc243b78dad2"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/gumbet.jpg",
+        "relativePath": "resorts/turkey/gumbet.jpg",
+        "md5": "e8c945c52584c687898ae18b51d8a04f"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/erzurum.jpg",
+        "relativePath": "resorts/turkey/erzurum.jpg",
+        "md5": "a97504f705eb32966de6f86618cb2f29"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/fethie.jpg",
+        "relativePath": "resorts/turkey/fethie.jpg",
+        "md5": "60667551f4f9f3b7093de06b74800780"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/erdgies.jpg",
+        "relativePath": "resorts/turkey/erdgies.jpg",
+        "md5": "63ada95e7abe06cc841f491eff390622"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/didim.jpg",
+        "relativePath": "resorts/turkey/didim.jpg",
+        "md5": "351a2b5b5829333466ca50e6fea7efe7"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/dalaman.jpg",
+        "relativePath": "resorts/turkey/dalaman.jpg",
+        "md5": "81a0fa9ce7099e542e149c50a56e35b3"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/chalysh.jpg",
+        "relativePath": "resorts/turkey/chalysh.jpg",
+        "md5": "518e3f4b6ca4d6265b1590bce14231db"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/bodrum.jpg",
+        "relativePath": "resorts/turkey/bodrum.jpg",
+        "md5": "7697d69a6a04134ac34fe464a25643a3"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/bitez.jpg",
+        "relativePath": "resorts/turkey/bitez.jpg",
+        "md5": "c8dc7c4e5cbf29d9cf9fc8f902d9405d"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/cheshme.jpg",
+        "relativePath": "resorts/turkey/cheshme.jpg",
+        "md5": "d21936d81c11c253a13109d2e747d7f8"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/belek.jpg",
+        "relativePath": "resorts/turkey/belek.jpg",
+        "md5": "7cf9ef4094f9602ecdfe0cbc0401f8de"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/antalia.jpg",
+        "relativePath": "resorts/turkey/antalia.jpg",
+        "md5": "3c4066cf4fee77b2c7829fbcde40bc87"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/alachati.jpg",
+        "relativePath": "resorts/turkey/alachati.jpg",
+        "md5": "3ee13d828d2e5ea76fed44149d02aeac"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/turkey/alania.jpg",
+        "relativePath": "resorts/turkey/alania.jpg",
+        "md5": "107da5dbd3dad1a3e10e6aab1414176b"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/zheleznovodsk.jpg",
+        "relativePath": "resorts/russia/zheleznovodsk.jpg",
+        "md5": "fd2b27f4f6d524938294a96ac15e6581"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/tymen.jpg",
+        "relativePath": "resorts/russia/tymen.jpg",
+        "md5": "83f792d8f8ce3a1f288855ea2540f1db"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/tuapse.jpg",
+        "relativePath": "resorts/russia/tuapse.jpg",
+        "md5": "73eda3c7118687d3b79acefff6c79443"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/spb.jpg",
+        "relativePath": "resorts/russia/spb.jpg",
+        "md5": "029a8d704bea99d325f6ea71f6434ca9"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/sochi.jpg",
+        "relativePath": "resorts/russia/sochi.jpg",
+        "md5": "d0593163752ef1f2bb6f4699ba7a737e"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/sheregesh.jpg",
+        "relativePath": "resorts/russia/sheregesh.jpg",
+        "md5": "bd21f7dedd5ace32935c8b72addb2dd5"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/sochicenter.jpg",
+        "relativePath": "resorts/russia/sochicenter.jpg",
+        "md5": "87b7a98a3f5c34ba2a772e6e7428b869"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/rozakhutor.jpg",
+        "relativePath": "resorts/russia/rozakhutor.jpg",
+        "md5": "1657e1a7e743e5856ba3798af9885e95"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/sakhalin.jpg",
+        "relativePath": "resorts/russia/sakhalin.jpg",
+        "md5": "2cd888f79a483a9f9f687a016f4eae40"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/sevkav.jpg",
+        "relativePath": "resorts/russia/sevkav.jpg",
+        "md5": "403b54bd51d2203696a989622361e19f"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/pyatigorsk.jpg",
+        "relativePath": "resorts/russia/pyatigorsk.jpg",
+        "md5": "ede7c44150cfc7db23551566f2004516"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/nizhniynovgorod.jpg",
+        "relativePath": "resorts/russia/nizhniynovgorod.jpg",
+        "md5": "2562a0fb53aaff97dc46a33458b3ebf0"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/moscow.jpg",
+        "relativePath": "resorts/russia/moscow.jpg",
+        "md5": "86965fb321e7d286c025bfd6a3e2f530"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/nationaltours.jpg",
+        "relativePath": "resorts/russia/nationaltours.jpg",
+        "md5": "e89d92edd52b12d014ae4d5c19e8c07b"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/lazarevskoe.jpg",
+        "relativePath": "resorts/russia/lazarevskoe.jpg",
+        "md5": "bd58b4176efc30c92ace9980bf8909e7"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/loo.jpg",
+        "relativePath": "resorts/russia/loo.jpg",
+        "md5": "54516155e3c72e08b996de47566d3af7"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/krasnayapolyana.jpg",
+        "relativePath": "resorts/russia/krasnayapolyana.jpg",
+        "md5": "97b201b459a698b9a6d15d4335ff37fc"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/kislovodsk.jpg",
+        "relativePath": "resorts/russia/kislovodsk.jpg",
+        "md5": "525414f34aa7b54c73090496b8c1ffb1"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/kazan.jpg",
+        "relativePath": "resorts/russia/kazan.jpg",
+        "md5": "5f3e7eb9f766f29ebda0b12a6f806d8c"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/kaliningrad.jpg",
+        "relativePath": "resorts/russia/kaliningrad.jpg",
+        "md5": "be9149fc03ddaa0a0c8e931ff499660d"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/karelia.jpg",
+        "relativePath": "resorts/russia/karelia.jpg",
+        "md5": "8e811a1d449e9d4eb9b2370b7bd30e29"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/kamchatka.jpg",
+        "relativePath": "resorts/russia/kamchatka.jpg",
+        "md5": "837219be5de97944aded7b4c82f359f4"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/hosta.jpg",
+        "relativePath": "resorts/russia/hosta.jpg",
+        "md5": "1b590d01afdf6760cb07870260a4aa5f"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/goldenring.jpg",
+        "relativePath": "resorts/russia/goldenring.jpg",
+        "md5": "0e973ea354335b11561da275e6ca7ab3"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/imeretinskaya.jpg",
+        "relativePath": "resorts/russia/imeretinskaya.jpg",
+        "md5": "7cfa43e2552144425451f0da2a722c60"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/gelendgik.jpg",
+        "relativePath": "resorts/russia/gelendgik.jpg",
+        "md5": "890ffb593eac3148204e45ec25997def"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/essentuki.jpg",
+        "relativePath": "resorts/russia/essentuki.jpg",
+        "md5": "3f03306152dc1d7306850830700504ff"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/gasprom.jpg",
+        "relativePath": "resorts/russia/gasprom.jpg",
+        "md5": "1d76b5c70a4c51b7c3fc7d3256ea7968"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/anapa.jpg",
+        "relativePath": "resorts/russia/anapa.jpg",
+        "md5": "545191ee5706922946d4c675e812f0e1"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/arkhyz.jpg",
+        "relativePath": "resorts/russia/arkhyz.jpg",
+        "md5": "65d8dbbfd737687e9e51185c093559cc"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/baikal.jpg",
+        "relativePath": "resorts/russia/baikal.jpg",
+        "md5": "0a0146bd8d72f54a7da1676d27dd5f17"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/altai.jpg",
+        "relativePath": "resorts/russia/altai.jpg",
+        "md5": "aca200341189aa478b1b2a1d831ab1d9"
+    },
+    {
+        "absolutePath": "/Users/shoore/PROJECTS/coral.ru/hotels-only/site/sunmar.ru/assets/resorts/russia/adler.jpg",
+        "relativePath": "resorts/russia/adler.jpg",
+        "md5": "9e773db82d408bc1106ef13cf765097c"
+    }
+]
