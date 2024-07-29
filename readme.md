@@ -1,7 +1,6 @@
-## Название акции / проекта
-[@Bitrix24]()
+## new.sunmar.ru [onlyhotel]
+[@Bitrix24](https://coraldigital.bitrix24.ru/company/personal/user/1265/tasks/task/view/106124/)
 
 Live URL(s)
-> <https://www.coral.ru/>
 
-> <https://www.sunmar.ru/>
+> <https://www.sunmar.ru/bookinghotel/>
