@@ -373,12 +373,17 @@ section.resorts {
 		flex-direction: column;
 		@media screen and (max-width: @narrow-breakpoint) {
 			transform: translateZ(0);
-			height: 40vw;
+			//height: 40vw;
+			height: 80vw;
 		}
 	}
 	.scroll-pager {
 		@media screen and (max-width: @narrow-breakpoint) {
-			margin-top: 40vw;
+			//margin-top: 40vw;
+			margin-top: 84vw;
+			>li:nth-child(even) {
+			display: none;
+			}
 		}
 	}
 	.resorts-slider {
@@ -396,6 +401,9 @@ section.resorts {
 			position: fixed;
 			width: 100vw;
 			left: -16px;
+			flex-direction: column;
+			flex-wrap: wrap;
+			max-height: 100vw;
 		}
 		.resort-card {
 			.proportional(16/9);
@@ -412,7 +420,7 @@ section.resorts {
 				inset: 0;
 				background: linear-gradient(to bottom, #000000AA, #00000000 50%);
 			}
-			&:first-child {
+			&:first-child, &:nth-child(2) {
 				@media screen and (max-width: @narrow-breakpoint) {
 					margin-left: 16px;
 				}
@@ -432,7 +440,9 @@ section.resorts {
 			}
 			@media screen and (max-width: @narrow-breakpoint) {
 				//flex: 0 0 100%;
-				flex: 0 0 70%;
+				//flex: 0 0 70%;
+				flex: 0 0 auto;
+				width: 70%;
 				scroll-snap-align: center;
 				font-size: 5vw;
 			}
